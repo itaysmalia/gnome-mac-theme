@@ -1,14 +1,14 @@
 # gnome-mac-theme
-one script to make your gnome DE look just like a macOS.
+One script to make your gnome DE look just like a macOS.
 ![](media/gnome-mac-theme-script-results.png)
-### pre-requirement:
+### Pre-requirement:
 #### * [git](https://git-scm.com/)
-##### if you dont have git:
+##### If you dont have git:
 `
 $ sudo apt install -y git
 `
 
-## how to run:
+## How to run:
 
 `
 $ git clone https://github.com/itaysmalia/gnome-mac-theme.git
@@ -24,7 +24,7 @@ $ ./main.bash
 `
 
 ### And that is all!!
-##### let me know if there were any error:
+##### Let me know if there were any error:
 ##### itays.malia@gmail.com
-##### thank you for using the gnome mac theme script.
-##### feel free to leave a star ;)
+##### Thank you for using the gnome mac theme script.
+##### Feel free to leave a star ;)
