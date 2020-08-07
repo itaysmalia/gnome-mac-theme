@@ -1,7 +1,7 @@
 #!/bin/bash
+echo "Switching your gnome DE theme to a macOS-like look :)"
+# source script params
 source ./params.bash &&
-# TODO probebly unnessery : remove line
-DIR_TO_RETURN=${pwd} &&
 
 # create user themes directory, also works if already exist because of the -p fleg
 mkdir -p ~/.themes &&
@@ -10,7 +10,7 @@ mkdir -p ~/.themes &&
 cd ~/.themes &&
 
 # download theme xz compressed file
-wget $THEME_URL &&
+wget -q $THEME_URL &&
 
 # xz decompress file
 xz -d `basename $THEME_URL` &&
@@ -28,7 +28,7 @@ mkdir -p ~/.icons &&
 cd ~/.icons &&
 
 # git cloneing the icons repo from github
-git clone $ICONS_REPO_URL &&
+git clone --quiet $ICONS_REPO_URL &&
 
 # change gnome desktop icons configuration
 dconf write $ICONS_KEY "'$ICONS_NAME'" && 
@@ -40,7 +40,7 @@ mkdir -p ~/.fonts &&
 cd ~/.fonts &&
 
 # download San Francisco font
-wget "$FONT_URL" -O $FONT_FILE_NAME &&
+wget -q "$FONT_URL" -O $FONT_FILE_NAME &&
 
 # save interface font size
 INTERFACE_FONT_SIZE=`echo /org/gnome/desktop/interface/font-name | rev | cut -d " " -f 1 | rev` &&
@@ -62,15 +62,12 @@ mkdir -p ~/.extensions &&
 cd ~/.extensions &&
 
 # git cloneing the dash repo from github
-git clone $DASH_REPO_URL &&
+git clone --quiet $DASH_REPO_URL &&
 
 # change current directory to dash extension repo directory
 cd `basename $DASH_REPO_URL | cut -d "." -f 1` &&
-make &&
-make install &&
-# !taking gnome down : find replacement
-# gnome-shell --replace &&
-
+make > /dev/null &&
+make install > /dev/null &&
 
 # get extensions list
 EXTENSIONS=`dconf read $EXTENSIONS_KEY` &&
