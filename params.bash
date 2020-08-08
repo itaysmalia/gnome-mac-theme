@@ -1,3 +1,5 @@
+WINDOWS_BUTTONS_KEY="/org/gnome/desktop/wm/preferences/button-layout"
+WINDOWS_ALL_BUTTONS="appmenu:minimize,maximize,close"
 THEME_URL=https://srv-file18.gofile.io/download/YSt8Ih/Mojave-dark.tar.xz
 THEME_KEY="/org/gnome/desktop/interface/gtk-theme"
 THEME_NAME="Mojave-dark"
