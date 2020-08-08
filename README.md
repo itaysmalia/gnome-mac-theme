@@ -13,12 +13,15 @@ $ sudo apt install -y git
 `
 $ git clone https://github.com/itaysmalia/gnome-mac-theme.git
 `
+
 `
 $ cd gnome-mac-theme
 `
+
 `
 $ chmod u+x ./main.bash
 `
+
 `
 $ ./main.bash
 `
