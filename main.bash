@@ -84,7 +84,7 @@ mkdir -p ~/.extensions
 # change current directory to user extensions directory
 cd ~/.extensions 
 
-# git cloneing the dash repo from github
+# git cloning the dash repo from github
 git clone --quiet $DASH_REPO_URL 
 
 # change current directory to dash extension repo directory
@@ -100,10 +100,11 @@ then
   echo "dash extension is already on, so we are done"
 else
     # enabling the dash extension
-    gnome-extensions enable $EXTENSION_NAME 
-    echo "Select position 'Bottom' and you are done." 
-    gnome-extensions prefs $EXTENSION_NAME 
+    gnome-extensions enable $EXTENSION_NAME
 
-    # if got here, there was an error
-    echo "ERROR"
+    # describing to user what he needs to choose in the prefs window  
+    echo "Select position 'Bottom' and you are done." 
+
+    # open extension prefs window
+    gnome-extensions prefs $EXTENSION_NAME 
 fi 
