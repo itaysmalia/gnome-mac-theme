@@ -47,7 +47,7 @@ mkdir -p ~/.icons
 # change current directory to user icons directory
 cd ~/.icons 
 
-# git cloneing the icons repo from github
+# git cloning the icons repo from github
 git clone --quiet $ICONS_REPO_URL 
 
 # change gnome desktop icons configuration
