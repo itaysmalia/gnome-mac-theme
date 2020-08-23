@@ -1,6 +1,6 @@
 WINDOWS_BUTTONS_KEY="/org/gnome/desktop/wm/preferences/button-layout"
 WINDOWS_ALL_BUTTONS="appmenu:minimize,maximize,close"
-THEME_URL=https://srv-file18.gofile.io/download/YSt8Ih/Mojave-dark.tar.xz
+THEME_URL=https://www100.zippyshare.com/d/fvTwYNja/296/Mojave-dark.tar.xz
 THEME_KEY="/org/gnome/desktop/interface/gtk-theme"
 THEME_NAME="Mojave-dark"
 ICONS_REPO_URL="https://github.com/keeferrourke/la-capitaine-icon-theme.git"
