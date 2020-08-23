@@ -1,11 +1,17 @@
-# gnome-mac-theme
+]# gnome-mac-theme
 One script to make your gnome DE look just like a macOS.
 ![](media/gnome-mac-theme-script-results.png)
 ### Pre-requirement:
 #### * [git](https://git-scm.com/)
-##### If you dont have git:
+#### * [gnome-tweaks](https://github.com/GNOME/gnome-tweaks)
+##### install requirements:
+### debain based:
 `
-$ sudo apt install -y git
+$ sudo apt install -y git gnome-tweaks
+`
+### arch based:
+`
+$ sudo pacman -S --noconfirm git gnome-tweaks
 `
 
 ## How to run:
